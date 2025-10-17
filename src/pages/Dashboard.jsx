@@ -1,5 +1,5 @@
-import WeeklySummary from '../components/Dashboard/WeeklySummary'
-import CourseProgressList from '../components/Dashboard/CourseProgressList'
+import WeeklySummary from '../components/Dashboard/WeeklySummary.jsx'
+import CourseProgressList from '../components/Dashboard/CourseProgressList.jsx'
 
 export default function Dashboard() {
   return (
