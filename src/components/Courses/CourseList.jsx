@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import { supabase } from '../../lib/supabase'
 import Button from '../UI/Button'
 import Modal from '../UI/Modal'
-import CourseForm from './CourseForm'
+import CourseForm from './CoursesForm.jsx'
 import { useNavigate } from 'react-router-dom'
 
 export default function CourseList() {
