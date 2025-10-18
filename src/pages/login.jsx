@@ -3,7 +3,7 @@ import Button from '../components/UI/Button'
 import Input from '../components/UI/Input'
 import { supabase } from '../lib/supabase'
 
-export default function Login() {
+export default function login() {
   const [mode, setMode] = useState('signin') // 'signin' | 'signup'
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
