@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import Input from '../UI/Input'
-import Button from '../UI/Button'
+import Input from '../UI/Input.jsx'
+import Button from '../UI/Button.jsx'
 import { validate, required, positiveInt } from '../../lib/validators'
 
 export default function CourseForm({ initial={}, onSubmit, onCancel }) {

@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
-import { supabase } from '../../lib/supabase'
-import { weekRange } from '../../lib/date'
+import { supabase } from '../../lib/supabase.js'
+import { weekRange } from '../../lib/date.js'
 
 export default function WeeklySummary() {
   const [planned, setPlanned] = useState(0)

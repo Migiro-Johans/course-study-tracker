@@ -1,7 +1,7 @@
 import { useState } from 'react'
-import Button from '../components/UI/Button'
-import Input from '../components/UI/Input'
-import { supabase } from '../lib/supabase'
+import Button from '../components/UI/Button.jsx'
+import Input from '../components/UI/Input.jsx'
+import { supabase } from '../lib/supabase.js'
 
 export default function Login() {
   const [mode, setMode] = useState('signin') // 'signin' | 'signup'
@@ -14,7 +14,7 @@ export default function Login() {
   async function loginWithGoogle() {
     setError(null); setMessage(null)
     const { error } = await supabase.auth.signInWithOAuth({
-      
+
       provider: 'google',
       options: { redirectTo: window.location.origin }
     })

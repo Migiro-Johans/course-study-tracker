@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react'
-import { supabase } from '../../lib/supabase'
-import Input from '../UI/Input'
-import Button from '../UI/Button'
-import LessonList from '../Lessons/LessonList'
+import { supabase } from '../../lib/supabase.js'
+import Input from '../UI/Input.jsx'
+import Button from '../UI/Button.jsx'
+import LessonList from '../Lessons/LessonList.jsx'
 
 export default function CourseDetail({ id }) {
   const [course, setCourse] = useState(null)

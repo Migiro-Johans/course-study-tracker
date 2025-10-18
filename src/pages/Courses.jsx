@@ -1,7 +1,7 @@
 import { useMemo } from 'react'
 import { useLocation } from 'react-router-dom'
-import CourseList from '../components/Courses/CourseList'
-import CourseDetail from '../components/Courses/CourseDetail'
+import CourseList from '../components/Courses/CourseList.jsx'
+import CourseDetail from '../components/Courses/CourseDetail.jsx'
 
 export default function Courses() {
   const params = new URLSearchParams(useLocation().search)

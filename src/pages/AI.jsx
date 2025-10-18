@@ -1,4 +1,4 @@
-import AIStudyHelper from '../components/AI/AIStudyHelper'
+import AIStudyHelper from '../components/AI/AIStudyHelper.jsx'
 export default function AI() {
   return (
     <div className="space-y-4">

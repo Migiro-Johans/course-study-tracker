@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
-import { supabase } from '../../lib/supabase'
-import Button from '../UI/Button'
-import Modal from '../UI/Modal'
+import { supabase } from '../../lib/supabase.js'
+import Button from '../UI/Button.jsx'
+import Modal from '../UI/Modal.jsx'
 import CourseForm from './CoursesForm.jsx'
 import { useNavigate } from 'react-router-dom'
 

@@ -1,5 +1,5 @@
-import SessionForm from '../components/Planner/SessionForm'
-import SessionList from '../components/Planner/SessionList'
+import SessionForm from '../components/Planner/SessionForm.jsx'
+import SessionList from '../components/Planner/SessionList.jsx'
 
 export default function Planner() {
   return (

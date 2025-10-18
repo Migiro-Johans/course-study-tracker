@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react'
-import { supabase } from '../../lib/supabase'
-import Input from '../UI/Input'
-import Button from '../UI/Button'
-import { validate, required, positiveInt } from '../../lib/validators'
-import { toISODate } from '../../lib/date'
+import { supabase } from '../../lib/supabase.js'
+import Input from '../UI/Input.jsx'
+import Button from '../UI/Button.jsx'
+import { validate, required, positiveInt } from '../../lib/validators.js'
+import { toISODate } from '../../lib/date.js'
 
 export default function SessionForm({ onCreated }) {
   const [courses, setCourses] = useState([])

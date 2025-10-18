@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react'
-import { supabase } from '../../lib/supabase'
-import Button from '../UI/Button'
-import Input from '../UI/Input'
-import Modal from '../UI/Modal'
-import { validate, required, positiveInt } from '../../lib/validators'
+import { supabase } from '../../lib/supabase.js'
+import Button from '../UI/Button.jsx'
+import Input from '../UI/Input.jsx'
+import Modal from '../UI/Modal.jsx'
+import { validate, required, positiveInt } from '../../lib/validators.js'
 
 export default function LessonList({ courseId }) {
   const [rows, setRows] = useState([])

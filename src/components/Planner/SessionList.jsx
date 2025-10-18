@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
-import { supabase } from '../../lib/supabase'
-import Button from '../UI/Button'
-import { weekRange } from '../../lib/date'
+import { supabase } from '../../lib/supabase.js'
+import Button from '../UI/Button.jsx'
+import { weekRange } from '../../lib/date.js'
 
 export default function SessionList() {
   const [rows, setRows] = useState([])
