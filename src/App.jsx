@@ -1,7 +1,7 @@
 import { Routes, Route, Navigate, useLocation } from 'react-router-dom'
 import AppShell from './components/AppShell'
 import ProtectedRoute from './routes/ProtectedRoute'
-import Login from './pages/login'
+import login from './pages/login'
 import Dashboard from './pages/Dashboard'
 import Courses from './pages/Courses'
 import Planner from './pages/Planner'
@@ -12,7 +12,7 @@ export default function App() {
   return (
     <Routes location={loc} key={loc.pathname}>
       {/* Public */}
-      <Route path="/login" element={<Login />} />
+      <Route path="/login" element={<login />} />
 
       {/* Private */}
       <Route element={<ProtectedRoute><AppShell /></ProtectedRoute>}>
