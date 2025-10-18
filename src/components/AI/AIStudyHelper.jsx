@@ -28,4 +28,4 @@ export default function AIStudyHelper() {
       {result && <pre className="text-xs bg-gray-100 p-3 rounded-xl overflow-auto">{JSON.stringify(result,null,2)}</pre>}
     </div>
   )
-}
+}v
