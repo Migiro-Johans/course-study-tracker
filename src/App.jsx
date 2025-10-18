@@ -1,7 +1,7 @@
 import { Routes, Route, Navigate, useLocation } from 'react-router-dom'
 import AppShell from './components/AppShell.jsx'
 import ProtectedRoute from './routes/ProtectedRoute.jsx'
-import Login from './pages/Login.jsx'
+import Login from './pages/login.jsx'
 import Dashboard from './pages/Dashboard.jsx'
 import Courses from './pages/Courses.jsx'
 import Planner from './pages/Planner.jsx'
