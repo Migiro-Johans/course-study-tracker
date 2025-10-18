@@ -3,7 +3,7 @@ import Button from '../components/UI/Button'
 import Input from '../components/UI/Input'
 import { supabase } from '../lib/supabase'
 
-export default function login() {
+export default function Login() {
   const [mode, setMode] = useState('signin') // 'signin' | 'signup'
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
@@ -14,6 +14,7 @@ export default function login() {
   async function loginWithGoogle() {
     setError(null); setMessage(null)
     const { error } = await supabase.auth.signInWithOAuth({
+      
       provider: 'google',
       options: { redirectTo: window.location.origin }
     })
