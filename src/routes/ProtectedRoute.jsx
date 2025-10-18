@@ -3,15 +3,37 @@ import { Navigate } from 'react-router-dom'
 import { supabase } from '../lib/supabase'
 
 export default function ProtectedRoute({ children }) {
-  const [session, setSession] = useState(undefined)
+  const [session, setSession] = useState(undefined) // undefined = loading
+  const [error, setError] = useState(null)
 
   useEffect(() => {
-    supabase.auth.getSession().then(({ data }) => setSession(data.session ?? null))
-    const { data: sub } = supabase.auth.onAuthStateChange((_e, s) => setSession(s ?? null))
-    return () => sub.subscription.unsubscribe()
+    let cancelled = false
+    ;(async () => {
+      try {
+        const { data, error } = await supabase.auth.getSession()
+        if (cancelled) return
+        if (error) setError(error)
+        setSession(data?.session ?? null)
+      } catch (e) {
+        if (!cancelled) setError(e), setSession(null)
+      }
+    })()
+    const { data: sub } = supabase.auth.onAuthStateChange((_e, s) => {
+      if (!cancelled) setSession(s ?? null)
+    })
+    return () => { cancelled = true; sub.subscription.unsubscribe() }
   }, [])
 
-  if (session === undefined) return null // or loader
+  if (session === undefined) {
+    return (
+      <div className="min-h-[100dvh] grid place-items-center text-sm text-gray-500 bg-white">
+        Loading…
+      </div>
+    )
+  }
+  if (error) {
+    return <div className="p-4 text-sm text-red-600">Auth error: {String(error.message || error)}</div>
+  }
   if (!session) return <Navigate to="/login" replace />
   return children
 }
