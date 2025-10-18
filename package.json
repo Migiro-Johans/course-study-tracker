@@ -29,5 +29,18 @@
     "postcss": "^8.5.6",
     "tailwindcss": "^4.1.14",
     "vite": "^7.1.7"
-  }
+  },
+  "description": "Track your study progress across courses, plan sessions for the week, and optionally summarize notes using AI.",
+  "main": "eslint.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Migiro-Johans/course-study-tracker.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Migiro-Johans/course-study-tracker/issues"
+  },
+  "homepage": "https://github.com/Migiro-Johans/course-study-tracker#readme"
 }
