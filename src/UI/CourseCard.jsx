@@ -34,7 +34,7 @@ export default function CourseCard({
       onUpdate(course.id, { plan })
       setAskPreference(false)
 
-      // ✅ Auto-redirect to Planner after successful generation
+      // Auto-redirect to Planner after successful generation
       navigate(`/app/course/${course.id}/plan`)
     } catch (e) {
       setError(e.message || 'Failed to generate plan')
@@ -203,9 +203,9 @@ Return JSON with keys:
 - flash_questions (array of strings),
 - weekly_plan (array of {week:int, sessions: array of {day:string, topic:string, minutes:int}}).
 Guidelines:
-- Aim for 8–14 lessons total.
+- Aim for 8-35 lessons total.
 - Choose weeks dynamically based on course size. ${guidance}
-- 4–6 sessions per week; 45–90 minutes per session.
+- 4-6 sessions per week; 45-90 minutes per session.
 - Alternate between NEW concepts and REVIEW days.
 - Ensure the weekly_plan covers all lessons sensibly.
 

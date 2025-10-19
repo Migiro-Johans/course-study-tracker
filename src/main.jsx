@@ -8,6 +8,7 @@ import Join from './pages/Join'
 import Dashboard from './pages/Dashboard'
 import Planner from './pages/Planner'
 import Notes from './pages/Notes'
+import Profile from './pages/Profile'
 
 
 createRoot(document.getElementById('root')).render(
@@ -20,6 +21,7 @@ createRoot(document.getElementById('root')).render(
 <Route path="/app" element={<Dashboard />} />
 <Route path="/app/course/:id/plan" element={<Planner />} />
 <Route path="/app/course/:id/notes" element={<Notes />} />
+<Route path="/profile" element={<Profile />} />
 </Route>
 </Routes>
 </BrowserRouter>

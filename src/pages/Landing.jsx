@@ -17,21 +17,15 @@ export default function Landing(){
             <Link to="/join" className="px-5 py-3 rounded-xl bg-black text-white">Join</Link>
             <Link to="/app" className="px-5 py-3 rounded-xl border">Open App</Link>
           </div>
-          <ul className="mt-8 text-sm text-gray-600 list-disc pl-5">
-            <li>No backend required for this demo (platform key via env).</li>
-            <li>Frontend only: React + Tailwind. Persist to localStorage.</li>
-          </ul>
+        
         </div>
         <div className="rounded-2xl border bg-white p-6 shadow-sm">
           <h3 className="font-semibold text-lg">How it works</h3>
           <ol className="mt-4 space-y-2 text-sm">
-            <li>1) Platform is configured with OpenAI (no user key input)</li>
+            <li>1) Leverage Artificial intelligence to plan your learning(no user key input)</li>
             <li>2) Add a course name + provider</li>
             <li>3) Click "Generate Plan" to create lessons, summaries & a weekly planner</li>
           </ol>
-          <div className="mt-4 p-3 rounded-md bg-gray-50 text-xs text-gray-600">
-            Tip: Use the provided Figma to refine spacing, colors, and layout.
-          </div>
         </div>
       </div>
     </section>
