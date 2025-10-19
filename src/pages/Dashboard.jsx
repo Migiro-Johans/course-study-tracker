@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import AddCourseForm from '../ui/AddCourseForm'
+import AddCourseForm from '../UI/AddCourseForm'
 import CourseCard from '../UI/CourseCard'
 
 export default function Dashboard() {
